@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/aluno.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./assets/imgs/logo_senac-removebg-preview.png"
+    />
+
+    <title>Tela do Aluno</title>
+  </head>
+  <body>
+    <div class="student-info-container">
+      <h2>Informações do Aluno</h2>
+      <form action="./php/process_student_info.php" method="post">
+        <input type="text" name="nome" placeholder="Nome" required />
+        <input type="text" name="turma" placeholder="Turma" required />
+        <input
+          type="text"
+          name="informacoes_importantes"
+          placeholder="Informações Importantes"
+          required
+        />
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </body>
+</html>

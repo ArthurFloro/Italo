@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/professor.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./assets/imgs/logo_senac-removebg-preview.png"
+    />
+
+    <title>Informações do Professor</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Informações do Professor</h2>
+      <form action="./php/process_teacher_info.php" method="post">
+        <input
+          type="text"
+          name="nome_professor"
+          placeholder="Nome Professor"
+          required
+        />
+        <input type="text" name="turma" placeholder="Turma" required />
+        <textarea
+          name="instrumentos_avaliativos"
+          placeholder="Instrumentos Avaliativos"
+          rows="5"
+          required
+        ></textarea>
+        <input
+          type="text"
+          name="nome_alunos"
+          placeholder="Nome dos Alunos"
+          required
+        />
+        <button type="submit">Salvar</button>
+      </form>
+    </div>
+  </body>
+</html>
